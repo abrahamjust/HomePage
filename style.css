@@ -1,3 +1,5 @@
+/*CSS reset*/
+
 @import "modern-normalize";
 
 :root {
@@ -25,3 +27,65 @@ img {
   max-inline-size: 100%;
 }
 
+/*Sectioning*/
+
+header, footer {
+  height: 60vh;
+  border-bottom: 2px solid black;
+}
+
+main {
+  height: 50vh;
+  border-bottom: 2px solid black;
+}
+
+img, svg {
+  width: 10px;
+  height: 10px;
+}
+
+/*Header section*/
+
+header {
+  background: linear-gradient(170deg, #0891b2 60%, white 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-left {
+  position: relative;
+}
+
+#header-left img {
+  height: 55vh;
+  width: 25vw;
+}
+
+#header-left p {
+  color: white;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 3rem;
+}
+
+#header-right {
+  height: 40vh;
+  width: 70vh;
+  background-color: white;
+  box-shadow: 1px 1px rgb(201, 196, 196);
+  padding: 10px;
+}
+
+#header-right h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+#header-right p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
