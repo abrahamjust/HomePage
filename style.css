@@ -8,7 +8,7 @@
   --font-sans: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, figure, p, ol, ul {
+body, h1, h2, h3, h4, h5, figure, p, ol, ul {
   margin: 0;
 }
 
@@ -29,14 +29,9 @@ img {
 
 /*Sectioning*/
 
-header, footer {
-  height: 60vh;
-  border-bottom: 2px solid black;
-}
-
 main {
-  height: 170vh;
-  border-bottom: 2px solid black;
+  margin: 30px;
+  margin-bottom: 100px;
 }
 
 a {
@@ -45,18 +40,15 @@ a {
   align-items: center;
 }
 
-img, svg {
-  width: 10px;
-  height: 10px;
-}
-
 /*Header section*/
 
 header {
-  background: linear-gradient(170deg, #0891b2 60%, white 60%);
+  background: linear-gradient(169deg, #0891b2 60%, white 60%);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 70px;
+  padding-top: 50px;
 }
 
 #header-left {
@@ -70,7 +62,7 @@ header {
 
 #header-left p {
   color: white;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif);
   position: absolute;
   bottom: 5%;
   left: 5%;
@@ -83,27 +75,32 @@ header {
   background-color: white;
   box-shadow: 1px 1px rgb(201, 196, 196);
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #header-right h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif);
   font-size: 2rem;
   margin-bottom: 5px;
 }
 
 #header-right p {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-sans);
   font-size: 1rem;
+}
+
+#header-icons {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*Main section*/
 
-main {
-  margin: 30px;
-}
-
 main h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif);
   font-size: 1.5rem;
 }
 
@@ -126,7 +123,7 @@ main h1 {
 .Project-info-line-one {
   display: flex;
   justify-content: space-between;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif);
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -144,7 +141,7 @@ main h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-serif);
   font-size: 2rem;
   color: white;
   width: 100%;
@@ -152,5 +149,50 @@ main h1 {
 }
 
 .Project-info-explanation {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-sans);
+}
+
+/*Footer section*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0891b2;
+  color: white;
+}
+
+#footer-right img, #footer-left{
+  width: 55vh;
+  height: 55vh;
+}
+
+#footer-left h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+#footer-left p {
+  font-family: var(--font-sans);
+  margin-bottom: 20px;
+}
+
+.footer-contact-svg {
+  display: flex;
+  justify-content: left;
+}
+
+.footer-contact-svg svg {
+  width: 3vw;
+  height: 3vh;
+}
+
+#footer-icons {
+  display: flex;
+}
+
+#footer-icons img , #header-icons img {
+  width: 4vw;
+  height: 4vh;
 }
