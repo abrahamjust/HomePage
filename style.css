@@ -35,8 +35,14 @@ header, footer {
 }
 
 main {
-  height: 50vh;
+  height: 170vh;
   border-bottom: 2px solid black;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img, svg {
@@ -88,4 +94,63 @@ header {
 #header-right p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+}
+
+/*Main section*/
+
+main {
+  margin: 30px;
+}
+
+main h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Cards {
+  width: 30vw;
+  height: 70vh;
+  box-shadow: 1px 1px 2px 2px rgb(201, 196, 196);
+}
+
+.Project-info {
+  margin: 20px;
+}
+
+.Project-info-line-one {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.Project-info-line-one div {
+  display: flex;
+}
+
+.Project-info-line-one div img, .Project-info-line-one div svg {
+  width: 3vw;
+  height: 3vh;
+}
+
+.Project-screenshot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+  height: 60%;
+}
+
+.Project-info-explanation {
+  font-family: "Playfair Display", serif;
 }
